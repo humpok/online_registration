@@ -20,13 +20,16 @@ body {
     text-align: center;
     color: white;
 }
+
 .headline h1 {
     font-size: 19px;
 }
+
 header {
     padding: 12px;
     text-align: center;
 }
+
 header h1 {
     margin: 0;
     padding: 12px 0;
@@ -38,6 +41,7 @@ header p {
     color: silver;
     font-size: 14px;
 }
+
 .double-line {
     width: 100%;
     height: 9px;
@@ -45,12 +49,14 @@ header p {
     border-top: #2d3945 solid 4px;
     border-bottom: #2d3945 solid 2px;
 }
+
 .single-line {
     width: 100%;
     height: 5px;
     margin-top: 22px;
     border-top: #2d3945 solid 2px;
 }
+
 form h1 {
     margin: 22px 0;
     color: #2d3945;
@@ -71,7 +77,7 @@ form p {
     color: #6e7d8c;
     margin-bottom: 10px;
 }
-
+select,
 input {
     height: 50px;
     width: 100%;
@@ -81,6 +87,16 @@ input {
     border-radius: 4px;
     background-color: #eeeff0;
     line-height: normal;
+}
+select {
+    color: grey;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+select:focus {
+    color: black;
+    font-weight: normal;
 }
 
 input.zip-code {
@@ -97,19 +113,7 @@ input[type="submit"] {
     background-color: #4ebab4;
 }
 
-input[type='radio'],
-input[type='checkbox'] {
-    margin: 0;
-    padding: 0;
-    height: auto;
-    display: inline-block;
-    width: 20px;
-}
-input[type='radio'] + label,
-input[type='checkbox'] + label {
-    display: inline-block;
-    margin: 0 0 0 10px;
-}
+select:focus,
 textarea:focus,
 input:focus {
     border: #46698a solid 2px;
@@ -118,13 +122,13 @@ input:focus {
 .input-label-group {
     padding: 5px 0;
 }
+
 .group {
     margin-bottom: 20px;
 }
 
 div.input-label-group input,
-div.input-label-group label
-{
+div.input-label-group label {
     vertical-align: middle;
 }
 
@@ -147,9 +151,7 @@ footer {
     font-style: italic;
 }
 
-
-:-ms-input-placeholder
-{
+:-ms-input-placeholder {
     text-align: right;
     color: grey;
     font-size: 12px;
@@ -173,10 +175,41 @@ footer {
     font-style: italic;
 }
 
-::-moz-placeholder {  /* Firefox 19+ */
+::-moz-placeholder { /* Firefox 19+ */
     text-align: right;
     color: grey;
     font-size: 12px;
     font-weight: 300;
     font-style: italic;
+}
+input[type="radio"],
+input[type="checkbox"] {
+    display: none;
+}
+
+input[type="radio"] + label span,
+input[type="checkbox"] + label span {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+input[type="checkbox"] + label span {
+    background: url('../img/checkbox.png') left top no-repeat;
+}
+
+input[type="radio"] + label span {
+    background: url('../img/radio.png') left top no-repeat;
+}
+
+
+input[type="checkbox"]:checked + label span {
+    background: url('../img/checkbox_checked.png') left top no-repeat;
+}
+
+input[type="radio"]:checked + label span{
+    background: url('../img/radio_checked.png') left top no-repeat;
 }
