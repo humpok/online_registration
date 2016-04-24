@@ -201,7 +201,7 @@ input[type="radio"]:checked + label span {
 
 /* Custom select arrow */
 select {
-    appearance: none;
+    /*appearance: none ; not valid...*/
     -moz-appearance: none; /* Firefox */
     -webkit-appearance: none; /* Safari and Chrome */
     background: #eeeff0 url('../img/br_down.png') no-repeat right 20px center;
