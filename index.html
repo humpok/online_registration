@@ -28,11 +28,13 @@
 
                 <div class="input-group">
                     <label for="name">Full Name</label>
-                    <input id="name" name="name" type="text" placeholder="Required"/>
+                    <input id="name" name="name" type="text" placeholder="Required" required aria-required="true"
+                           pattern="[A-Za-z-0-9]+\s[A-Za-z-'0-9]+" title="Firstname Lastname"/>
                 </div>
                 <div class="input-group">
                     <label for="email">Email Address</label>
-                    <input id="email" name="email" type="email" placeholder="Required"/>
+                    <input id="email" name="email" type="email" placeholder="Required" required
+                           pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" />
                 </div>
                 <div class="input-group">
                     <label for="phone">Phone Number</label>

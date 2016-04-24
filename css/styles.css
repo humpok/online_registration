@@ -240,6 +240,18 @@ select {
     font-style: italic;
 }
 
+input:required {
+    background: hsla(167, 43%, 90%, 0.48);
+    border:1px solid #999;
+}
+
+input:invalid,
+input:out-of-range {
+    border-color:hsl(0, 50%, 50%);
+    background:hsl(0, 50%, 90%);
+}
+
+
 
 /* Styles for desktop screens */
 @media screen and (min-width: 760px) {
